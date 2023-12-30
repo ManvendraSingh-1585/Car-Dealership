@@ -1,0 +1,82 @@
+{
+    "admins": [
+        { "admin_id": "admin1", "password": "hashed_password" },
+        { "admin_id": "admin2", "password": "hashed_password" }
+    ],
+    "users": [
+        {
+            "user_email": "user1@example.com",
+            "user_id": "user1",
+            "user_location": "City1",
+            "user_info": { "key1": "value1" },
+            "password": "hashed_password",
+            "vehicle_info": ["vehicle1", "vehicle2"]
+        },
+        {
+            "user_email": "user2@example.com",
+            "user_id": "user2",
+            "user_location": "City2",
+            "user_info": { "key2": "value2" },
+            "password": "hashed_password",
+            "vehicle_info": ["vehicle3", "vehicle4"]
+        }
+    ],
+    "dealerships": [
+        {
+            "dealership_email": "dealer1@example.com",
+            "dealership_id": "dealer1",
+            "dealership_name": "Dealer 1",
+            "dealership_location": "City1",
+            "password": "hashed_password",
+            "dealership_info": { "key1": "value1" },
+            "cars": ["car1", "car2"],
+            "deals": ["deal1", "deal2"],
+            "sold_vehicles": ["sold_vehicle1", "sold_vehicle2"]
+        },
+        {
+            "dealership_email": "dealer2@example.com",
+            "dealership_id": "dealer2",
+            "dealership_name": "Dealer 2",
+            "dealership_location": "City2",
+            "password": "hashed_password",
+            "dealership_info": { "key2": "value2" },
+            "cars": ["car3", "car4"],
+            "deals": ["deal3", "deal4"],
+            "sold_vehicles": ["sold_vehicle3", "sold_vehicle4"]
+        }
+    ],
+    "deals": [
+        { "deal_id": "deal1", "car_id": "car1", "deal_info": { "key1": "value1" } },
+        { "deal_id": "deal2", "car_id": "car2", "deal_info": { "key2": "value2" } }
+    ],
+    "cars": [
+        { 
+            "car_id": "car1", 
+            "type": "Type1", 
+            "name": "Car1", 
+            "model": "Model1", 
+            "car_info": { 
+                "brand": "Brand1", 
+                "year": 2022, 
+                "color": "Red", 
+                "price": 30000 
+            } 
+        },
+        { 
+            "car_id": "car2", 
+            "type": "Type2", 
+            "name": "Car2", 
+            "model": "Model2", 
+            "car_info": { 
+                "brand": "Brand2", 
+                "year": 2021, 
+                "color": "Blue", 
+                "price": 25000 
+            } 
+        }
+    ],
+    "sold_vehicles": [
+        { "vehicle_id": "sold_vehicle1", "car_id": "car1", "vehicle_info": { "key1": "value1" } },
+        { "vehicle_id": "sold_vehicle2", "car_id": "car2", "vehicle_info": { "key2": "value2" } }
+    ]
+}
